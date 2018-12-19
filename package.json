@@ -1,10 +1,24 @@
 {
   "name": "three.webpack",
+  "author": {
+    "name": "Or Fleisher",
+    "email": "contact@orfleisher.com",
+    "url": "https://orfleisher.com"
+  },
+  "repository": {
+    "type": "Github",
+    "url": "https://github.com/juniorxsound/THREE.Webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/juniorxsound/THREE.Webpack/issues"
+  },
+  "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --progress --colors",
     "style": "prettier --write src/*",
-    "build": "webpack --colors -p -d"
+    "build": "webpack --colors -p -d",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "three": "^0.99.0"
@@ -16,6 +30,7 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^0.28.9",
+    "gh-pages": "^2.0.1",
     "glsl-noise": "^0.0.0",
     "glslify-loader": "^2.0.0",
     "html-webpack-plugin": "^2.30.1",

@@ -1,0 +1,25 @@
+sudo: required
+dist: trusty
+
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: dist
+  keep-history: true
+  on:
+    branch: master
+before_script:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - "yarn install"
+script:
+  - "yarn run style"
+  - "yarn run build"
+after_success:
+  - "yarn run deploy"
