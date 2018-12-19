@@ -11,7 +11,18 @@
 </p>
 
 ### Quick-start
-
+To quickly get started, clone the repository
+```sh
+git clone https://github.com/juniorxsound/THREE.Webpack.git
+```
+Make sure you have yarn installed ([or install it](https://yarnpkg.com/lang/en/docs/install/#mac-stable)) and run
+```sh
+cd THREE.Webpack && yarn
+```
+Now you can start developing by running
+```sh
+yarn run dev
+```
 ### Develop
 
 ### Deploy
