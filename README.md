@@ -1,4 +1,6 @@
-# THREE.Webpack
+## THREE.Webpack
+![Screenshot](https://github.com/juniorxsound/THREE.Webpack/blob/master/docs/cover.jpg)
+
 [![Build Status](https://travis-ci.com/juniorxsound/THREE.Webpack.svg?token=ztzi6EexNpaHGeSp1q8W&branch=master)](https://travis-ci.com/juniorxsound/THREE.Webpack)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
